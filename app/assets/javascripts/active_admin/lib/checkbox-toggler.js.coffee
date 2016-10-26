@@ -16,7 +16,7 @@ class ActiveAdmin.CheckboxToggler
     else
       @toggle_all_checkbox = @$container.find '.toggle_all'
 
-    @checkboxes = @$container.find(':checkbox').not @toggle_all_checkbox
+    @checkboxes = @$container.find('.collection_selection').not @toggle_all_checkbox
 
   _bind: ->
     @checkboxes.change       (e)=> @_didChangeCheckbox e.target
